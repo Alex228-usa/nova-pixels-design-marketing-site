@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Props } from "./type";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 const Card = ({
   src,
@@ -12,17 +13,44 @@ const Card = ({
   fields,
   titleBoxClassName,
 }: Props) => {
+  const variants = {
+    hover: {
+      scale: 1.05,
+      boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.2)",
+      transition: { duration: 0.3 },
+    },
+    duplicate: {
+      scale: 0.95,
+      rotateX: -10,
+      opacity: 0.5,
+      transition: { duration: 0.3 },
+    },
+  };
+
   return (
-    <div className={clsx("relative", className)}>
+    <motion.div
+      className={clsx("relative", className)}
+      whileHover="hover"
+    >
+      <motion.div
+        className="absolute inset-0"
+        variants={variants}
+        whileHover="duplicate"
+      >
+        <Image
+          src={src}
+          alt={alt}
+          className={clsx("object-cover rounded-[21px]", imgClassName)}
+        />
+      </motion.div>
+
       <Image
         src={src}
         alt={alt}
         className={clsx("object-cover rounded-[21px]", imgClassName)}
       />
 
-      <div
-        className={clsx("overflow-hidden mt-5 items-start", titleBoxClassName)}
-      >
+      <div className={clsx("overflow-hidden mt-5 items-start", titleBoxClassName)}>
         <p
           className={clsx(
             "whitespace-nowrap font-superior overflow-hidden text-ellipsis text-black text-base not-italic font-[450] leading-[100%] tracking-[-0.64px] uppercase",
@@ -45,7 +73,7 @@ const Card = ({
           ))}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
