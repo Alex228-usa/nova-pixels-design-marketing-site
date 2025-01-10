@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'LT Superior';
+    src: url('LTSuperior-Regular.eot');
+    src: url('LTSuperior-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LTSuperior-Regular.woff2') format('woff2'),
+        url('LTSuperior-Regular.woff') format('woff'),
+        url('LTSuperior-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LT Superior';
+    src: url('LTSuperior-Semibold.eot');
+    src: url('LTSuperior-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('LTSuperior-Semibold.woff2') format('woff2'),
+        url('LTSuperior-Semibold.woff') format('woff'),
+        url('LTSuperior-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LT Superior';
+    src: url('LTSuperior-Medium.eot');
+    src: url('LTSuperior-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LTSuperior-Medium.woff2') format('woff2'),
+        url('LTSuperior-Medium.woff') format('woff'),
+        url('LTSuperior-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LT Superior';
+    src: url('LTSuperior-Bold.eot');
+    src: url('LTSuperior-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LTSuperior-Bold.woff2') format('woff2'),
+        url('LTSuperior-Bold.woff') format('woff'),
+        url('LTSuperior-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

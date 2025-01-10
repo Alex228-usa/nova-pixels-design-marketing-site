@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "LT Superior";
+  font-style: normal;
+  font-weight: normal;
+  src: local("LT Superior Regular"),
+    url("/assets/font-test/ltsuperior-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "LT Superior Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("LT Superior Medium"),
+    url("/assets/font-test/ltsuperior-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "LT Superior Semi-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("LT Superior Semi-bold"),
+    url("/assets/font-test/ltsuperior-semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "LT Superior Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("LT Superior Bold"),
+    url("/assets/font-test/ltsuperior-bold.otf") format("opentype");
+}
